@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — VALORA LUXURY</title>
+<meta name="description" content="Get in touch with the VALORA LUXURY team." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23c9a96e%22>V</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <button class="hamburger-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="header-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html">Collections</a></li>
+        <li><a href="shop.html?new=true">New Arrivals</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="index.html" class="header-logo">
+      <span class="logo-wordmark">Valora</span>
+      <span class="logo-tagline">Luxury</span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn search-trigger" data-search-trigger aria-label="Search">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a href="contact.html" class="icon-btn account-trigger" aria-label="Account">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        <span class="cart-badge" data-wishlist-count style="display:none;">0</span>
+      </a>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge" data-cart-count style="display:none;">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Mobile">
+  <ul class="mobile-nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="shop.html">Collections</a></li>
+    <li><a href="shop.html?new=true">New Arrivals</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div style="display:flex; gap: 1rem;">
+    <a href="wishlist.html" class="btn btn--outline" style="flex:1;">Wishlist</a>
+    <a href="cart.html" class="btn btn--primary" style="flex:1;">Cart</a>
+  </div>
+</nav>
+
+<div class="search-overlay">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <input type="text" placeholder="Search products, categories…" autocomplete="off" />
+      <button class="search-close">Close ✕</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<main>
+  <div class="container contact-page">
+
+    <div style="margin-bottom: 3rem;">
+      <span class="section-label">We'd Love To Hear From You</span>
+      <h1 class="section-title">Get In <em>Touch</em></h1>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- CONTACT INFO -->
+      <div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">Email</div>
+          <div class="contact-info-value">care@valoraluxury.example</div>
+        </div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">Phone</div>
+          <div class="contact-info-value">+91 98765 43210</div>
+        </div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">Studio</div>
+          <div class="contact-info-value" style="font-size: var(--text-md); line-height: 1.6;">VALORA LUXURY Studio<br />New Delhi, India</div>
+        </div>
+        <div class="contact-info-block">
+          <div class="contact-info-label">Hours</div>
+          <div class="contact-info-value" style="font-size: var(--text-md);">Mon – Sat, 10am – 7pm IST</div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="checkout-panel">
+        <h3 class="checkout-section-title">Send Us A Message</h3>
+        <form id="contactForm">
+          <div class="form-grid" style="margin-bottom: 1rem;">
+            <div class="form-field">
+              <label class="form-label" for="cName">Name</label>
+              <input type="text" id="cName" class="form-input" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="cEmail">Email</label>
+              <input type="email" id="cEmail" class="form-input" placeholder="you@example.com" required />
+            </div>
+            <div class="form-field span-2">
+              <label class="form-label" for="cSubject">Subject</label>
+              <input type="text" id="cSubject" class="form-input" placeholder="How can we help?" required />
+            </div>
+            <div class="form-field span-2">
+              <label class="form-label" for="cMessage">Message</label>
+              <textarea id="cMessage" class="form-input" rows="5" placeholder="Tell us more…" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-wordmark">Valora</span>
+        <span class="logo-tagline">Luxury</span>
+        <p class="footer-brand-desc">A premium multi-category fashion house. Elegance, without compromise.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="Pinterest">PT</a>
+          <a href="#" class="social-link" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Shop</h4>
+        <div class="footer-links">
+          <a href="shop.html?category=eyewear">Eyewear</a>
+          <a href="shop.html?category=watches">Watches</a>
+          <a href="shop.html?category=bags">Bags</a>
+          <a href="shop.html?category=fashion">Fashion</a>
+          <a href="shop.html?category=footwear">Footwear</a>
+          <a href="shop.html?category=accessories">Accessories</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Customer Service</h4>
+        <div class="footer-links">
+          <a href="contact.html">Contact Us</a>
+          <a href="shipping.html">Shipping Policy</a>
+          <a href="returns.html">Return &amp; Refund Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="wishlist.html">Wishlist</a>
+          <a href="cart.html">Shopping Bag</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 VALORA LUXURY. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="returns.html">Returns</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    showToast('Thank you — we will be in touch shortly.');
+    this.reset();
+  });
+</script>
+</body>
+</html>
